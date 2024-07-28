@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="valores" id="valores">
+            <p class="cifrao">$$$$$$$$$$$$$$$</p>
+            <h1 class="title">CONVERSOR DE MOEDAS</h1>
+            <h3 class="subtitle">Qual o valor atual de cada moeda em relação ao real?</h3>
+            <div class="coluna">
+                <div class="linha"><label for="">Dólar</label><input class="input" id="dolar" type="number" placeholder="$$$$$$"></div>
+                <div class="linha"><label for="">Euro</label><input class="input" id="euro" type="number" placeholder="€€€€€€"></div>
+                <div class="linha"><label for="">Yuan Chinês</label><input class="input" id="yuan" type="number" placeholder="¥¥¥¥¥¥"></div>
+            </div>
+            <button onclick="proximo()">PRÓXIMO</button>
+            <p class="cifrao">$$$$$$$$$$$$$$$</p>
+        </div>
+        <div class="conversor" id="conversor">
+            <p class="cifrao">$$$$$$$$$$$$$$$</p>
+            <h1 class="title">CONVERSOR DE MOEDAS</h1>
+            <h3 class="subtitle">Qual valor você quer converter?</h3>
+            <input type="number" class="input2" id="valorReal">
+            <div class="coluna">
+                <div class="linha2"><label for="">Dólar</label><label id="dolarConvertido" for="">US$ 0,00</label></div>
+                <div class="linha2"><label for="">Euro</label><label id="euroConvertido" for="">€ 0,00</label></div>
+                <div class="linha2"><label for="">Yuan Chinês</label><label for="" id="yuanConvertido" >¥ 0,00</label></div>
+            </div>
+            <button onclick="converte(this)">CONVERTER</button>
+            <p class="cifrao">$$$$$$$$$$$$$$$</p>
+        </div>
+    </div>
+</body>
+</html>
